@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './counter.scss'
-import Delta from "./Delta";
 import Delta2 from "./Delta2";
 
 class Index extends Component {
@@ -15,8 +14,7 @@ class Index extends Component {
             <div className='counter'>
                 <div>{value}</div>
                 <div>수1 수2: {delta} {delta2}</div>
-                <Delta delta={delta} handleCharge={this.handleCharge}/>
-                <Delta2 delta2={delta2} handleCharge2={this.handleCharge2} handlePlus={this.handlePlus} handleMinus={this.handleMinus} handleMultiple={this.handleMultiple} handleDivide={this.handleDivide}/>
+                <Delta2 delta={delta} handleCharge={this.handleCharge} delta2={delta2} handleCharge2={this.handleCharge2} handlePlus={this.handlePlus} handleMinus={this.handleMinus} handleMultiple={this.handleMultiple} handleDivide={this.handleDivide}/>
             </div>
         );
     }
